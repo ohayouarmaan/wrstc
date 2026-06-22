@@ -1,0 +1,12 @@
+[workspace]
+resolver = "3"
+
+members = [
+    "stun",
+    "ice",
+    "sdp",
+    "dtls",
+    "sctp",
+    "datachannel",
+    "webrtc", "transport",
+]

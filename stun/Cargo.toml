@@ -1,0 +1,8 @@
+[package]
+name = "stun"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+transport = { path = "../transport" }
+tokio = { version = "1", features = ["net", "rt", "macros"] }
