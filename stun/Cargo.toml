@@ -5,4 +5,5 @@ edition = "2024"
 
 [dependencies]
 transport = { path = "../transport" }
-tokio = { version = "1", features = ["net", "rt", "macros"] }
+tokio = { version = "1", features = ["net", "rt", "macros", "sync"] }
+rand = "0.10.1"

@@ -36,7 +36,6 @@ pub async fn check_google_stun() {
     google_stun_udp.send_to(request, google_stun_udp_address).await.unwrap();
     let mut buf: [u8; 1024] = [0u8; 1024];
     let size = google_stun_udp.recv_from(&mut buf).await.unwrap();
-    println!("{:2X?}", &buf[..size]);
     assert_eq!(true, true);
 }
 
